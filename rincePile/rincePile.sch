@@ -44,7 +44,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 2150 2050 2450
 Wire Wire Line
-	2050 2450 4100 2450
+	2050 2450 2350 2450
 Wire Wire Line
 	4100 2450 4100 1900
 Wire Wire Line
@@ -191,4 +191,20 @@ Wire Wire Line
 Wire Wire Line
 	3100 1700 3100 1450
 Connection ~ 3200 1700
+$Comp
+L power:GND #PWR?
+U 1 1 62487133
+P 2350 2550
+F 0 "#PWR?" H 2350 2300 50  0001 C CNN
+F 1 "GND" H 2355 2377 50  0000 C CNN
+F 2 "" H 2350 2550 50  0001 C CNN
+F 3 "" H 2350 2550 50  0001 C CNN
+	1    2350 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2450 2350 2550
+Connection ~ 2350 2450
+Wire Wire Line
+	2350 2450 4100 2450
 $EndSCHEMATC

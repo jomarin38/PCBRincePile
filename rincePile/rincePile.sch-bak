@@ -47,28 +47,12 @@ Wire Wire Line
 	2050 2450 4100 2450
 Wire Wire Line
 	4100 2450 4100 1900
-$Comp
-L Device:L_Core_Ferrite_Coupled_Small L1
-U 1 1 61EA321C
-P 3050 1650
-F 0 "L1" H 3050 1881 50  0000 C CNN
-F 1 "L_Core_Ferrite_Coupled_Small" H 3050 1790 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3050 1650 50  0001 C CNN
-F 3 "~" H 3050 1650 50  0001 C CNN
-	1    3050 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3750 1600 3750 1200
 Wire Wire Line
 	3750 1200 4100 1200
 Wire Wire Line
 	2800 1700 2800 1600
-Wire Wire Line
-	2800 1600 2950 1600
-Wire Wire Line
-	2950 1700 2800 1700
-Connection ~ 2800 1600
 $Comp
 L Device:R R1
 U 1 1 6200459F
@@ -80,8 +64,6 @@ F 3 "~" H 3500 1700 50  0001 C CNN
 	1    3500 1700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3150 1600 3750 1600
 $Comp
 L Device:Jumper JP1
 U 1 1 620268EC
@@ -94,15 +76,12 @@ F 3 "~" H 3500 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 1700 3200 1700
-Wire Wire Line
 	3650 1700 3800 1700
 Wire Wire Line
 	3800 2050 3800 1700
 Connection ~ 3800 1700
 Wire Wire Line
 	3200 2050 3200 1700
-Connection ~ 3200 1700
 Wire Wire Line
 	3200 1700 3350 1700
 $Comp
@@ -183,4 +162,33 @@ Wire Wire Line
 	2150 1600 2800 1600
 Wire Wire Line
 	2050 1600 2050 2050
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 6218F74F
+P 3100 1250
+F 0 "J3" V 3162 1394 50  0000 L CNN
+F 1 "Conn_01x04_Male" V 3253 1394 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 3100 1250 50  0001 C CNN
+F 3 "~" H 3100 1250 50  0001 C CNN
+	1    3100 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 1600 2900 1600
+Wire Wire Line
+	2900 1600 2900 1450
+Connection ~ 2800 1600
+Wire Wire Line
+	3000 1700 3000 1450
+Wire Wire Line
+	2800 1700 3000 1700
+Wire Wire Line
+	3200 1600 3200 1450
+Wire Wire Line
+	3200 1600 3750 1600
+Wire Wire Line
+	3200 1700 3100 1700
+Wire Wire Line
+	3100 1700 3100 1450
+Connection ~ 3200 1700
 $EndSCHEMATC
